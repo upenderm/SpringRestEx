@@ -31,7 +31,7 @@ public class FirstController {
 		return new ModelAndView("UserPage", "userDetail", new UserDetail());
 	}
 	
-	@RequestMapping(value="/userFormSubmit", method=RequestMethod.GET)
+	@RequestMapping(value="/userFormSubmit", method=RequestMethod.POST)
 	public ModelAndView saveUserDetails(){
 		String message = "You are in display page !";
 		System.out.println("In saveUserDetails()");

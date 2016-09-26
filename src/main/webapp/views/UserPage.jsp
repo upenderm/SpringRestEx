@@ -7,7 +7,7 @@
 <title>Spring REST Example</title>
 </head>
 <body>
-<form action="userFormSubmit" >
+<form action="${pageContext.request.contextPath}/userFormSubmit" method="post">
 	<center>
 		<h2>User Page</h2>
 		
@@ -20,6 +20,10 @@
 		</tr>
 		<tr>
 			<td> Enter lastname : </td>
+			<td><form:input path="userDetail.lastName" />
+		</tr>
+		<tr>
+			<td> Enter email : </td>
 			<td><form:input path="userDetail.lastName" />
 		</tr>
 		<tr>
